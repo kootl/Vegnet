@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--统一出口-->
+    <drawable name="commItemBackground">@drawable/commLightGray</drawable>
+    <drawable name="commItemBackgroundWithPadding">@drawable/commLightGrayWithPadding</drawable>
+    <drawable name="commItemBackgroundFixPasswordToggle">@drawable/commLightGray</drawable>
+    <!--枚举-->
+    <drawable name="commNullDrawAble">@null</drawable>
+    <drawable name="commLightGray">@drawable/selector_edit_item_bg</drawable>
+    <drawable name="commLightGrayWithPadding">@drawable/selector_edit_item_bg_with_padding</drawable>
+</resources>

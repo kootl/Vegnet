@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main.widget.MainActivity">
+    <item
+        android:id="@+id/id_menu_item_picker_dir"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_picker_dir"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/id_menu_item_picker"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_finish"
+        app:showAsAction="always"
+        />
+</menu>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunstar.vegnet.kootl.userinfo.ui.UserInfoActivity">
+
+    <include layout="@layout/base_toolbar_normal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <!-- <ImageView
+             android:id="@+id/id_iv_userface"
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:layout_gravity="center"
+             android:src="@mipmap/ic_icon"/>-->
+
+        <!--
+        1、当  android:scaleType="centerCrop"  或者fitXY
+        当  android:layout_width="120dp" 和 android:layout_height="120dp"
+           当      app:riv_oval="true"
+           设不设置  app:riv_corner_radius=""都是圆
+          2、当  android:scaleType="centerCrop"  或者fitXY
+             当  android:layout_width="120dp" 和 android:layout_height="120dp"
+              app:riv_corner_radius="60dp"  宽高的一半
+              设不设置    app:riv_oval="" 都是圆
+        -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/id_iv_userface"
+            android:layout_width="@dimen/base_userface_width"
+            android:layout_height="@dimen/base_userface_height"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/userface"
+            app:riv_border_color="#e4e2e2"
+            app:riv_border_width="1dp"
+            app:riv_corner_radius="0dp"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
+            app:riv_tile_mode="clamp"/>
+
+
+        <TextView
+            android:id="@+id/id_tv_username"
+            style="@style/BaseTextStylePrimaryWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="username"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+
+    <!--android:stretchColumns="1" 指定第2列填满空白-->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/baseViewBg"
+        android:stretchColumns="1"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户昵称："/>
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[未填写]"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱账号："/>
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[未填写]"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱账号："/>
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[未填写]"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            >
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="邮箱账号："/>
+
+            <TextView
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="[未填写]"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

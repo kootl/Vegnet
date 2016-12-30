@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "com.sunstar.vegnet"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            //abiFilters"armeabi","armeabi-v7a","x86","mips","x86_64","mips64","arm64-v8a"
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        /**2016-11-1 22:49:27 add 【buildConfigField "boolean", "LOG_DEBUG", "false"】  */
+        /**2016-11-1 22:49:27 change  minifyEnabled true  */
+        /**2016-12-11 21:19:17 add  signingConfig signingConfigs.debug  */
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        /**2016-11-1 22:49:27 add  debug*/
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+    /**2016-12-11 21:19:37 add  signingConfigs */
+    signingConfigs {
+        debug {
+            storeFile file('Vegnet_Android.keystore')
+            storePassword "zhu123456"
+            keyAlias "vegnet_android"
+            keyPassword "zhu123456"
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/tbs_x5webview_v2.5.0.1031.jar')
+    compile project(':SocialLib')
+    compile project(':CheckAppUpdateLib')
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.5@aar'
+    compile project(':BaiduLBSLib')
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.5@aar'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-vector-drawable:24.2.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.github.zhaokaiqiang.klog:library:1.5.0'
+    compile 'com.jude:swipebackhelper:3.1.2'
+    compile 'com.github.chrisbanes:PhotoView:1.3.1'
+    compile 'com.jakewharton:disklrucache:2.0.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.jakewharton.rxbinding:rxbinding:1.0.0'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar'
+    compile 'com.github.niorgai:StatusBarCompat:2.1.1'
+    compile 'com.jaeger.statusbaruitl:library:1.3.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    compile 'com.github.louisgeek:LouisDoubanLoadingView:v1.0.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.4.0'
+    compile 'com.github.SilenceDut:jpinyin:v1.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.5@aar'
+    compile 'cn.bingoogolapple:bga-zbar:1.1.5@aar'
+    compile 'com.pgyersdk:sdk:2.4.5'
+    compile 'com.yalantis:ucrop:2.2.0'
+    compile 'com.makeramen:roundedimageview:2.2.1'
+    compile 'com.github.promeg:tinypinyin:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'jp.wasabeef:glide-transformations:2.0.1'
+    testCompile 'junit:junit:4.12'
+}

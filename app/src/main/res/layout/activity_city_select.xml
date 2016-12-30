@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_area_select"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunstar.vegnet.kootl.ssqselect.ui.CitySelectActivity"
+    >
+
+    <include layout="@layout/base_toolbar_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/id_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--top指示view-->
+        <TextView
+            android:id="@+id/id_tv_indicator_top_view"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#FF676767"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"/>
+
+        <com.sunstar.vegnet.kootl.ssqselect.widget.PinyinBannerColumnView
+            android:id="@+id/id_pinyin_banner_column_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/id_tv_indicator_center_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="#55555555"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="@android:color/white"
+            android:textSize="36sp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

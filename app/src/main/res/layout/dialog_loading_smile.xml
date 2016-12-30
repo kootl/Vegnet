@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:padding="10dp">
+
+    <!--  <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          style="?android:attr/progressBarStyleLarge"
+          />-->
+
+    <com.louisgeek.likedoubanloadingview.LikeDouBanSmileLoadingView
+        android:id="@+id/id_douban_loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:smileAutomatic="true"
+        app:smileCircleFrameHeight="5dp"
+        app:smileCircleRadius="15dp"
+        />
+
+    <TextView
+        android:id="@+id/id_tv_loading_message"
+        style="@style/BaseTextStyleSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="准备中..."
+        />
+
+    <ImageView
+        android:id="@+id/id_iv_loading_close"
+        style="@style/BaseImageIconStyleSmall"
+        android:layout_marginLeft="6dp"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        />
+
+</LinearLayout>

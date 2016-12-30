@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_auth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunstar.sociallib.AppAuthActivity">
+
+    <Button
+        android:id="@+id/id_btn_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="weixin"
+        />
+
+    <Button
+        android:id="@+id/id_btn_qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="qq"
+        />
+
+    <Button
+        android:id="@+id/id_btn_weibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="weibo"
+        />
+
+</LinearLayout>

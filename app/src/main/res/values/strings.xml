@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name">中国蔬菜网</string>
+    <!--comm-->
+    <string name="app_ok">好</string>
+    <string name="app_confirm">确定</string>
+    <string name="app_cancel">取消</string>
+    <string name="app_finish">完成</string>
+    <!--base-->
+    <string name="base_drawer_open">open</string>
+    <string name="base_drawer_close">close</string>
+    <string name="base_main_title_1">A</string>
+    <string name="base_main_title_2">B</string>
+    <string name="base_main_title_3">C</string>
+    <string name="base_login">登录</string>
+    <string name="base_register">注册</string>
+    <string name="base_reg">我要注册</string>
+    <string name="base_submit">提交</string>
+    <string name="base_version">版本：%1$s(%2$d)</string>
+    <!--menu-->
+    <string name="menu_item_finish">完成</string>
+    <string name="menu_item_search_enter">搜索入口</string>
+    <string name="menu_item_search">搜索</string>
+    <string name="menu_item_user">用户</string>
+    <string name="menu_item_share">分享</string>
+    <string name="menu_item_edit">编辑</string>
+    <string name="menu_item_picker_dir">相册</string>
+    <!--nav-->
+    <string name="nav_title_about">关于</string>
+    <string name="nav_title_news">中国蔬菜网</string>
+    <string name="nav_title_userinfo">用户信息</string>
+    <string name="nav_title_userinfo_edit">用户信息</string>
+    <string name="nav_title_feedback">意见反馈</string>
+    <string name="nav_title_userlogin">用户登录</string>
+    <string name="nav_title_itemselect">选择</string>
+    <string name="nav_title_setting">设置</string>
+    <string name="nav_title_channel">订阅</string>
+    <string name="nav_title_changepd">修改密码</string>
+    <string name="nav_title_userregister">用户注册</string>
+    <string name="nav_title_findpassword">找回密码</string>
+    <string name="nav_title_findaccount">找回账号</string>
+    <string name="nav_title_scan">扫一扫</string>
+    <string name="nav_title_area">地区选择</string>
+    <!--custom-->
+    <string name="scroll_aware_floating_action_button_behavior_normal" translatable="false">com.sunstar.vegnet.kootl.comm.ScrollAwareFloatingActionButtonBehaviorNormal</string>
+    <string name="scroll_aware_floating_action_button_behavior" translatable="false">com.sunstar.vegnet.kootl.comm.ScrollAwareFloatingActionButtonBehavior</string>
+    <string name="text_day_to_night">夜间模式</string>
+    <string name="text_night_to_day">日间模式</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+    <!-- Strings related to Settings -->
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="multi_select_list_preference_default_value"/>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
+</resources>

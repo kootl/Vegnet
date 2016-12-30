@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+    >
+    <!-- android:actionViewClass="android.widget.SearchView"
+    -->
+    <item
+        android:id="@+id/id_menu_item_search_enter"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_search_enter"
+        app:showAsAction="always"
+        />
+</menu>

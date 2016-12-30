@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+    <!--http://wiki.jikexueyuan.com/project/material-design/style/color.html
+     主题色  Green 500 & 700
+     辅助色 Teal 500-->
+    <color name="colorPrimary">#259b24</color>
+    <color name="colorPrimaryDark">#0a7e09</color>
+    <color name="colorAccent">#009688</color>
+    <!-- 窗口的背景颜色 -->
+    <color name="windowBackground">#e2dddd</color>
+
+    <!-- 部分页面在夜间模式需要黑色的样式  主题色  Grey 900 & 1000
+    辅助色 Teal 500-->
+    <color name="colorPrimary_Black">#212121</color>
+    <color name="colorPrimaryDark_Black">#000000</color>
+    <color name="colorAccent_Black">#009688</color>
+    <!-- 窗口的背景颜色 -->
+    <color name="windowBackground_Black">#303030</color>
+
+    <!--http://www.uisdc.com/comprehensive-material-design-note
+     Black  透明度 87%   54%   26%  12%
+    -->
+    <color name="textColorPrimary">#DE000000</color>
+    <color name="textColorSecondary">#8A000000</color>
+    <color name="iconsColor">@color/textColorSecondary</color>
+    <color name="textColorHint">#42000000</color>
+    <color name="dividersColor">#1F000000</color>
+
+    <!-- White  透明度 100%   70%   30%  12%-->
+    <!-- <color name="textColorPrimary_White">#FFFFFFFF</color>
+     <color name="textColorSecondary_White">#B3FFFFFF</color>
+     <color name="iconsColor_White">@color/textColorPrimary_White</color>
+     <color name="textColorHint_White">#4DFFFFFF</color>
+     <color name="dividersColor_White">#1FFFFFFF</color>-->
+
+
+    <!--standard-->
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <!--base-->
+    <color name="baseGray">#b3bcbcbc</color>
+    <color name="baseGrayLight">#b3F6F6F6</color>
+    <color name="baseWhite">#ffffffff</color>
+    <color name="baseBlack">#212121</color>
+    <!--custom base-->
+    <color name="baseItemClickColor">#42000000</color>
+
+    <color name="baseViewBg">@color/windowBackground</color>
+    <color name="baseViewBg_Black">@color/windowBackground_Black</color>
+    <!-- -->
+    <color name="baseIconColor">@color/colorPrimary</color>
+    <color name="baseIconColor_Black">#fefefe</color>
+    <color name="baseIconBg">@color/baseGrayLight</color>
+    <!-- -->
+    <color name="baseButtonTextColor">@color/baseWhite</color>
+    <color name="baseButtonBg">@color/colorPrimary</color>
+    <color name="baseButtonGrayBg">@color/baseGray</color>
+    <!-- -->
+    <color name="baseStatusBarColor">@color/colorPrimary</color>
+    <color name="baseStatusBarColorDark">@color/colorPrimaryDark</color>
+    <color name="baseBannerBottomBg">#66000000</color>
+
+    <!--custom-->
+    <color name="toastOkColor">@color/baseIconColor</color>
+    <color name="toastInfoColor">@color/colorAccent</color>
+    <color name="toastWarnColor">#EE0100</color>
+    <color name="toastSolidBg">@color/white</color>
+    <color name="toastStrokeGrayBg">@color/baseGray</color>
+    <color name="editItemGrayBg">@color/baseGrayLight</color>
+    <color name="editItemBorderGreenBg">@color/colorPrimary</color>
+
+    <color name="baseGridItemBg">@color/baseViewBg</color>
+    <color name="baseGridItemSelectedBg">#f0f6f1f1</color>
+
+</resources>

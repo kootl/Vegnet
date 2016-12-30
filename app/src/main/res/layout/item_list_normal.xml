@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:tools="http://schemas.android.com/tools"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/base_item_comm_margin"
+                                    android:layout_marginRight="@dimen/base_item_comm_margin"
+                                    android:layout_marginTop="@dimen/base_item_comm_margin"
+                                    android:foreground="@drawable/selector_item_normal"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/base_item_comm_padding"
+        android:paddingRight="@dimen/base_item_comm_padding"
+        >
+
+        <!--  android:transitionName="@string/list_detail_imageview_transition_name"-->
+        <ImageView
+            android:id="@+id/id_tv_item_image"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/ic_launcher"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_tv_item_title"
+                style="@style/BaseTextStylePrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="表挺大的大叔大婶安大大打到我大城市司法打到我大城市司法阿打算打"/>
+
+            <TextView
+                android:id="@+id/id_tv_item_title_more"
+                style="@style/BaseTextStyleSecondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_item_comm_margin"
+                android:maxLines="2"
+                android:text="打到我大城市司法打到我大城市司法打到我大城市司法打到我大城市司法打到我大城市司法所大神"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/base_item_comm_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_tv_item_read_count"
+                    style="@style/BaseTextStyleSecondary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:lines="1"
+                    android:text="阅读数:120"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/id_ll_item_tag_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <!--   <TextView
+                      android:id="@+id/id_tv_item_tag"
+                      style="@style/BaseTextStyleSecondary"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="独家"
+                      />-->
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="id_base_holder" type="id"/>
+    <item name="id_view_state_holder" type="id"/>
+    <item name="id_view_location_holder" type="id"/>
+</resources>

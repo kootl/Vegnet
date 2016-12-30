@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="base_tab_layout_height">38dp</dimen>
+    <dimen name="base_tab_layout_add_btn_height">38dp</dimen>
+    <dimen name="base_tab_layout_add_btn_width">48dp</dimen>
+
+    <dimen name="base_image_icon_width">56dp</dimen>
+    <dimen name="base_image_icon_height">56dp</dimen>
+
+    <dimen name="base_image_icon_small_width">36dp</dimen>
+    <dimen name="base_image_icon_small_height">36dp</dimen>
+
+    <dimen name="base_button_width">48dp</dimen>
+    <dimen name="base_button_height">48dp</dimen>
+
+    <dimen name="base_text_size_big">18dp</dimen>
+    <dimen name="base_text_size_primary">16dp</dimen>
+    <dimen name="base_text_size_secondary">14dp</dimen>
+    <dimen name="base_text_size_tertiary">12dp</dimen>
+
+    <dimen name="base_item_comm_padding">5dp</dimen>
+    <dimen name="base_item_comm_margin">5dp</dimen>
+
+
+    <dimen name="base_userface_width">120dp</dimen>
+    <dimen name="base_userface_height">120dp</dimen>
+</resources>

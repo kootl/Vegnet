@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/id_menu_item_user"
+        android:orderInCategory="100"
+        android:title="@string/menu_item_user"
+        android:icon="@drawable/ic_more_vert_black_24dp"
+        app:showAsAction="always"
+        />
+</menu>

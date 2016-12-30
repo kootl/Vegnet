@@ -1,0 +1,98 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunstar.vegnet.news.ui.NewsPagerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--外层Layout一定要注意啊！！！-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--  android:layout_width="match_parent"-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/id_tab_layout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/base_tab_layout_height"
+                android:layout_weight="1"
+                app:tabGravity="center"
+                app:tabMode="scrollable"
+                />
+
+            <LinearLayout
+                android:id="@+id/id_ll_channel_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_add_circle_outline_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="2dp"
+                    android:text="订阅"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/id_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+            <include layout="@layout/base_no_data_notice"/>
+        </FrameLayout>
+    </LinearLayout>
+    <!-- app:elevation	设置FAB未按下时的景深
+ app:pressedTranslationZ	设置FAB按下时的景深
+ app:fabSize	设置FAB的大小，默认只有normal和mini两种选项
+ app:borderWidth	设置FAB的边框宽度
+ android:src	设置FAB的drawaber
+ app:rippleColor	设置FAB按下时的背景色
+ app:backgroundTint	设置FAB未按下时的背景色
+ app:layout_anchor	设置FAB的锚点
+ app:layout_anchorGravity	设置FAB相对于锚点的位置
+ app:layout_behavior	设置FAB的Behavior行为属性
+ //注意
+ app:borderWidth :这个一般设置为0dp，不然的话在4.1的sdk上FAB会显示为正方形，而且在5.0以后的sdk没有阴影效果
+
+    app:layout_anchor="@id/id_recycler_view"
+    app:layout_anchorGravity="bottom|right|end"
+ -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/id_floating_action_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:clickable="true"
+        app:backgroundTint="@color/baseIconBg"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_behavior="@string/scroll_aware_floating_action_button_behavior"
+        app:pressedTranslationZ="12dp"
+        app:srcCompat="@drawable/ic_arrow_upward_black_24dp"/>
+</android.support.design.widget.CoordinatorLayout>

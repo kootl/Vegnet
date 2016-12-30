@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BaiduLBSLib/BaiduLBSLib.iml" filepath="$PROJECT_DIR$/BaiduLBSLib/BaiduLBSLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CheckAppUpdateLib/CheckAppUpdateLib.iml" filepath="$PROJECT_DIR$/CheckAppUpdateLib/CheckAppUpdateLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KooBase/KooBase.iml" filepath="$PROJECT_DIR$/KooBase/KooBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SocialLib/SocialLib.iml" filepath="$PROJECT_DIR$/SocialLib/SocialLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Vegnet.iml" filepath="$PROJECT_DIR$/Vegnet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

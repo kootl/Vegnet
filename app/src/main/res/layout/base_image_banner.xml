@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.sunstar.vegnet.kootl.banner.widget.BannerViewPager
+            android:id="@+id/id_banner_view_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/id_rl_banner_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/baseBannerBottomBg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/id_tv_title_banner"
+                style="@style/BaseTextStyleSecondary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="xxxx12121212121"
+                android:textColor="@android:color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/id_ll_banner_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <!--动态添加指示器-->
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>

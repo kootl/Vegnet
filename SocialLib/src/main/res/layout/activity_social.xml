@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_social"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunstar.sociallib.AppSocialActivity">
+
+    <Button
+        android:id="@+id/id_btn_bottom_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom 1 small icon"
+        />
+
+    <Button
+        android:id="@+id/id_btn_center_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="center 1 small icon"
+        />
+
+    <Button
+        android:id="@+id/id_btn_bottom_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bottom 2 big icon"
+        />
+
+    <Button
+        android:id="@+id/id_btn_center_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="center 2 big  icon"
+        />
+
+</LinearLayout>

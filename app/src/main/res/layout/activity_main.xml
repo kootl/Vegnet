@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sunstar.vegnet.ui.MainActivity">
+
+    <!--主布局-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/base_toolbar_normal"/>
+
+        <Button
+            android:id="@+id/id_tv_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Click To Next"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/id_tv_go2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Click To Next22"
+            android:textSize="20dp"/>
+        <Button
+            android:id="@+id/id_vtn"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="40dp"
+            android:layout_gravity="bottom"
+            android:text="121"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+    <!--侧滑菜单 android:layout_gravity="start"  android:layout_gravity="end"-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/id_tv_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="菜单view"
+            android:textSize="20dp"/>
+    </FrameLayout>
+</android.support.v4.widget.DrawerLayout>
